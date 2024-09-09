@@ -74,9 +74,33 @@ body {
     100% { transform: rotateY(0deg); }
 }
 
+@media (max-width : 1100px){
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 600px){
+
+    .container {
+        flex-direction: column;   
+    }
+    .card{
+        width: 300px;
+    }
+    .form{
+        width: 300px;
+    }
+    .form div {
+        display: block;
+        flex-direction: column;
+    }
+}
+
 .form {
     overflow: auto;
-    max-height: 38vh;
+    max-height: 42vh;
     display: flex;
     flex-direction: column;
     gap: 15px;
